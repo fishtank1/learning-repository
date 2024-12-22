@@ -1,0 +1,27 @@
+body {
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+}
+
+/* 
+    Difference between rem and em:
+    rem -> times * font-size of root element.
+    em -> times * font-size of parent element.
+
+*/
+
+h2 {
+    font-size: x-large;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+
+    /* font: italic small-caps 700 26px Arial; */
+
+    /* text-decoration: underline; */
+    /* text-transform: Uppercase; */
+    /* text-indent: 20px; */
+    /* letter-spacing: 2px; */
+    /* word-spacing: 5px; */
+    /* text-align: center; */
+}

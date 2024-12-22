@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <!-- Selectors are algorithms that decides which CSS rule must be applied in case of conflicts. Situation of confilict arises when on a same element rules from different selectors are applied. 
+    Order of specificity:
+    1. !important
+    2. Inline
+    3. id
+    4. class
+    5. element
+    6. universal
+    Also there is a place value theory to understand specificty.
+    0001 -> Highest place has inline style, 
+    second highest has ID, least lowest has classes, attributes, pseudo-classes, lowest has elements, pseudo-elements. 
+    -->
+    <h1>HTML & CSS Sandbox - Basic Selectors</h1>
+
+    <p>Complete list of selectors</p>
+    <ul>
+      <li>Universal Selector (*)</li>
+      <li>Type Selector (Element Selector)</li>
+      <li>Class Selector (.classname)</li>
+      <li>ID Selector (#id)</li>
+      <li>Descendant Selector (ancestor descendant)</li>
+      <li>Child Selector (parent > child)</li>
+      <li>Adjacent Sibling Selector (A + B)</li>
+      <li>General Sibling Selector (A ~ B)</li>
+      <li>Attribute Selectors - Targets elements based on their attributes.</li>
+      <li>Grouping Selector (A, B)</li>
+      <li>Pseudo-classes - Targets elements in a specific state.</li>
+      <li>Pseudo-elements - Targets parts of an element.</li>
+      <li>Compound Selectors (A.B, A#B, etc.) ➡️ NEW</li>
+      <li>
+        Combinators (Descendant, Child, Sibling)
+        <ul>
+          Define relationships between selectors:
+          <li>Descendant Selector: A B</li>
+          <li>Child Selector: A > B</li>
+          <li>Adjacent Sibling Selector: A + B</li>
+          <li>General Sibling Selector: A ~ B</li>
+        </ul>
+      </li>
+      <li>Negation (:not())</li>
+    </ul>
+  </body>
+</html>

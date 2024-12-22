@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Labels & Text Based Input Attributes</h1>
+
+    <!-- 
+      ATTRIBUTES:
+
+      type: defines input tag for the type of input we are taking by adding restrictions and validations.
+
+      placeholder: provide example for expected input or put very small instruction for user.
+
+      name: useful in server side processes. Analogy is it creates a kind of property / variable with the same name passed into the attribute and that varriable links to the value stored by the input field.
+
+      When user sensitive data collection is involved in form don't use GET method. Use POST INSTEAD.
+
+      required: makes the field mandatory to answer.
+
+      minlength, maxlength: restricts the input character to the defined range.
+
+      disabled: makes that field read-only.
+
+    -->
+
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          placeholder="Enter name" value="Jhon Doe" 
+          name="name"
+          required
+          minlength="3"
+          maxlength="10"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Enter email"
+          value="asd@efg.com"
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          placeholder="Enter password" 
+          minlength="8"
+          required
+        />
+      </div>
+      <div>
+        <!-- <input type="submit" value="Submit" /> -->
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

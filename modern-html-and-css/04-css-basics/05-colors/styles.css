@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /*Shorthand*/
+  /* RGB */
+  /* background: rgb(255,0,0); */
+}
+
+/* Color Names */
+.sporty {
+  color: red;
+}
+
+/* Hex Values */
+.casual {
+  color: #e04553;
+}
+
+.card {
+  /* RGBA */
+  background-color: rgb(0,0,0,0.5);
+
+  /* HSL */
+  background-color: hsl(0,100%,50%);
+
+  /* HSLA */
+  background-color: hsl(0,100%,50%,0.5);
+}
+
+.card-2 {
+  background-color: #000;
+  color: #fff;
+  opacity: 0.2;
+}
+
+/* STAY CONSISTENT IN USING TYPE OF VALUE AND PROPERTIES */

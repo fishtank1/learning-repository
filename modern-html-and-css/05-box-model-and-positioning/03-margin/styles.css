@@ -1,0 +1,26 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+.box {
+  background-color: coral;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px; /*If this is comment and also the above then the below code acts as creating margin between box elements but if only padding is added then they also contribute to padding but if margin is also added then the below code does not work as padding and margin collapse concept is applied. */
+}
+
+.box-2 {
+  margin: 20px 30px 40px 50px;
+}
+
+.box-3 {
+  margin-left: -30px; /*Avoid using them until very very necessary.*/
+}
+
+.box-1 {
+  margin: auto; /*Places the element in center of page.*/
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: blanchedalmond;
+}
+
+a:hover {
+  color: #333;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  background-color: purple;
+}
+
+a:visited {
+  background-color: yellow;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <!--FORMS-->
+    <!--
+      form tag has 2 main attribute action that takes PATH value where our form data will be submitted. method takes HTTP method POST, PUT, GET, DELETE as input. Note: form method can only be GET / POST.
+    -->
+    <h1>HTML & CSS Sandbox - Text Inputs</h1>
+    
+    <!--
+      The for tag in label is useful when in the input next to the label tag has same value for id as for in label.
+    -->
+
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <!-- <input type="submit" value="Submit" /> -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

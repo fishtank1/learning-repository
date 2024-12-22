@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <!-- 
+    Attributes on select and textarea
+    multiple: allows to make multiple selections on the drop down list.
+    selected: makes an option in drop down list already selcted.
+    size: makes the number of option visible without scrolling.
+
+    -->
+    <h1>Tech Support</h1>
+
+    <form>
+      <label for="product">Product</label>
+      <br />
+      <select name="product" id="product" multiple size="2">
+        <option value="iphone">iPhone</option>
+        <option value="nokia">Nokia</option>
+        <option value="samsung" selected>Samsung</option>
+        <option value="ibm">ibm</option>
+      </select>
+      <br />
+      <br />
+      <div>
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" placeholder="Enter your issue" rows="4" cols="50"></textarea>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
