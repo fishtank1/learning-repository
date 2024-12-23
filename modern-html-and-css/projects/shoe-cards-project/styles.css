@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #d9e2e8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* Card */
+.card {
+  padding: 20px 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: right;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Card Heading colors */
+.card-1 h2 {
+  color: #e04553;
+}
+
+.card-2 h2 {
+  color: #0d4ba3;
+}
+
+.card-3 h2 {
+  color: #512b22;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  background-color: #333;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-sporty {
+  background-color: #e04553;
+}
+
+.btn-casual {
+  background-color: #0d4ba3;
+}
+
+.btn-formal {
+  background-color: #512b22;
+}
+
+/* Card Background Image */
+
+.card-1 {
+  background-image: url("./images/sporty.png");
+}
+
+.card-2 {
+  background-image: url("./images/casual.png");
+}
+
+.card-3 {
+  background-image: url("./images/formal.png");
+}

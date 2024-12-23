@@ -1,3 +1,29 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.none-el {
+  display: none; /*Make it seem like the element is removed from dom as no space it was occupying is preserved.*/
+}
+
+.hidden-el {
+  visibility: hidden; /*Kinda like makes the element transparent. Hence the space the element occupied stays preserved.*/
+}
+
+/* p {
+  display: inline;
+}
+
+a {
+  display: block;
+} */
+
+a {
+  display: inline-block; /*Comment this line to see differences when only inline.*/
+  background-color: lightblue;
+  border: blue solid 1px;
+  margin: 20px 10px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+}
