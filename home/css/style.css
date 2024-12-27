@@ -27,6 +27,10 @@ body {
   border: 1px solid #262626;
 }
 
+article.card:hover {
+  background-color: #2626266e;
+}
+
 /* HEADER */
 .nav-bar {
   display: flex;
@@ -53,6 +57,7 @@ body {
 }
 
 /* Nav */
+
 nav ul {
   gap: 20px;
   display: inline-flex;
@@ -75,7 +80,7 @@ nav ul li:hover {
   color: #fafafad7;
 }
 
-.toggle-mode {
+.nav-btn {
   padding: 6px 10px;
   border-radius: 5px;
   border-width: 1px;
@@ -89,7 +94,8 @@ nav ul li:hover {
   transform: rotate(-32deg);
 }
 
-.toggle-mode:hover {
+.toggle-mode:hover,
+.mobile-nav:hover {
   background-color: #3737375d;
 }
 
@@ -121,4 +127,55 @@ nav ul li:hover {
   color: white;
   text-decoration: none;
   font-weight: 500;
+}
+
+.site-heading nav {
+  gap: 20px;
+  display: inline-flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: inline-block;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.threads h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.threads h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.threads ul,
+.courses ul {
+  list-style: none;
+}
+
+.threads article p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #a3a3a3;
+}
+
+.threads article a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.threads article a:hover {
+  text-decoration: underline;
 }
