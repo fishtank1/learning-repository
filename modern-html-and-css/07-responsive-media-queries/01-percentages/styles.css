@@ -5,5 +5,33 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/* If making static declaration to width property doing so might result in poor UX in mobile device. The goal of the width here is we don't want our width to go beyon 1100px but we can allow it to shrink when device viewport width is small and adjust according to it. To do we we will use the max-width property to make the not expand more tha 1100px but will allow it's width to shrink < 1100px.
+
+Instead of max-width we can also use percentage value. Remeber with percentage on smaller screen it might look ok but width expansion needs to be managed for larger screens and that can be controlled using max-width property alogn with % width.
+*/
+.container {
+  /* width: 1100px; Bad UX */
+  /* max-width: 1100px; Best way mostly */
+  /* width: 90%; fine for smaller screen but to make better UX for larger screen also use max-width property. */
+  width: 90%;
+  max-width: 1100px;
+  /* margin: 50px auto; */
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* To bring responsive to elements within container where responsive width is required, then set the max-width to 100%. Doing so means the width is going to be 100% of it's container.  */
+
+img {
+  max-width: 100%;
+}
+
+/* When not to use container. 
+1. Fixed size elements.
+2. Font sizes
+3. Precise Positioning
+4. Nested Percentages Values.
+*/

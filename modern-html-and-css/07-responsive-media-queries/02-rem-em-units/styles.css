@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +9,19 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+p {
+  font-size: 2rem;
+  /* By default 1rem font is 16px because defualt font size for root element is 16px. You can set the root font-size as 10px that way you can easily compute the rem. 1.2 * 10 is 12. Benefits of using rem is if root font size is changed the rest of the site follows that. But using the px will keep it exact same. Another reason is accessibility. Doing so user can change the font-size through browser settings.
+  em can give issues when using with nested elements.
+  */
 }
