@@ -154,7 +154,7 @@ Here’s the revised and improved version of your notes:
 
 ### Media Queries
 
-Media queries allow us to apply different CSS styles based on various conditions, such as screen size, media type, or device capabilities. They are useful for creating responsive designs and supporting screen readers, speech readers, printers, and more.
+Media queries allow us to apply different CSS styles based on various conditions, such as screen size, media type, or device capabilities. They are useful for creating responsive designs and supporting screen readers, speech readers, printers, and more. Media queries are restricted to viewport.
 
 ---
 
@@ -242,3 +242,102 @@ A **breakpoint** is the screen size at which a media query is triggered. It is u
 - Always test styles across devices to ensure proper application of media queries.
 
 ---
+
+Here’s the revised and improved version of your notes:
+
+---
+
+### Container Queries
+
+Container queries allow you to apply CSS styles based on the **size of a container element** rather than the size of the viewport. They provide finer control over responsive design, especially for components that need to adapt within different containers.
+
+---
+
+### **Syntax**
+
+```css
+/* Basic Syntax */
+@container (max-width: 600px) {
+  /* CSS Rules */
+}
+```
+
+---
+
+### **Key Components**
+
+1. **`@container` Rule**
+
+   - Defines conditional style rules based on the dimensions of a container.
+
+2. **`container-type` Property**
+
+   - Used to create a container for applying container queries.
+   - Values:
+     - `inline-size`: Targets only the **width** of the container.
+     - `size`: Targets both **width** and **height** of the container.
+
+   **Example**:
+
+   ```css
+   .responsive-container {
+     container-type: inline-size; /* Create a container based on its width */
+   }
+   ```
+
+3. **`container-name` Property**
+
+   - Assigns a specific name to a container, making it easier to target with container queries.
+
+   **Example**:
+
+   ```css
+   .responsive-container {
+     container-type: size;
+     container-name: main-container;
+   }
+   ```
+
+   **Targeting the Named Container**:
+
+   ```css
+   @container main-container (max-width: 500px) {
+     .child-element {
+       font-size: 14px;
+     }
+   }
+   ```
+
+---
+
+### **Container Units**
+
+Container queries also introduce **container-relative units**, which work similarly to viewport units (`vh`, `vw`) but are based on the dimensions of the container instead of the viewport:
+
+- **`cqw`**: 1% of the container’s width.
+- **`cqh`**: 1% of the container’s height.
+
+**Example**:
+
+```css
+.element {
+  width: 50cqw; /* 50% of the container’s width */
+  height: 20cqh; /* 20% of the container’s height */
+}
+```
+
+---
+
+### **Key Advantages**
+
+- Provide more **granular control** for responsive designs, especially when elements need to adapt based on the size of their parent containers.
+- Enable the creation of truly modular components that respond to their container rather than the global viewport.
+
+---
+
+### **Key Points**
+
+1. Use **`@container`** rules to apply styles based on container size.
+2. Set **`container-type`** to define containers for querying.
+3. Use **container units (`cqw`, `cqh`)** for dimensions relative to the container.
+4. Test container queries for nested components and modular layouts.
