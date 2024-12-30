@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --txt-highlight: #fcf5e9;
+  --hero-font: 1.2rem;
+  --container-normal: 1100px;
+  --container-wide: 1400px;
+  --container-narrow: 900px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}

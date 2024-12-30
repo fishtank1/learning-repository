@@ -4,6 +4,79 @@
   box-sizing: border-box;
 }
 
+:root {
+  --w-lg: 700px;
+  --gradient-bg: linear-gradient(45deg, #f00, #00f);
+}
+
+html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  margin-bottom: 80px;
+  background: var(--gradient-bg);
+}
+
+.header.transparent {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.9),
+    rgba(0, 0, 255, 0.9)
+  );
+  height: 100px;
+}
+
+.header nav ul {
+  gap: 3rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  margin: auto;
+}
+
+.container {
+  max-width: var(--w-lg);
+}
+
+.section {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.section h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: var(--gradient-bg);
+}
+
+.section#home {
+  margin-bottom: 100px;
+}
+
+.section img {
+  width: 100%;
+}
+
+.text-content p:first-child {
+  margin-bottom: 20px;
 }

@@ -5,5 +5,23 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --container-width: 1000px;
+}
+
+.container {
+  display: flex;
+  height: 200px;
+  width: var(--container-width);
+  background-color: black;
+}
+
+.item {
+  margin: 10px;
+  height: calc(100% - 20px);
+  background-color: coral;
+  min-width: calc(calc(100% / 5) - 20px);
 }
