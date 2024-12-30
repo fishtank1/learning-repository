@@ -1,0 +1,31 @@
+/*RESPONSIVENESS*/
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 300px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .header-flex {
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .services .service-container, 
+  .team .team-flex, 
+  .footer .footer-flex {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .footer .footer-flex {
+    text-align: center;
+  }
+
+  .gallery .gallery-flex .gallery-item {
+    width: calc(50% - 20px);
+  }
+}
