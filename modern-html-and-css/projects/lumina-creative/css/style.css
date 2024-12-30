@@ -79,3 +79,48 @@
     background-color: #333;
   }
 }
+
+.services {
+  color: #fff;
+  padding: 3rem 0 4rem;
+  background-color: #333;
+}
+
+.services-flex {
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .service-container {
+    display: flex;
+    gap: 2rem;
+
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+.team {
+  padding: 3rem 0 4rem;
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.team-flex {
+  display: flex;
+  gap: 1.4rem;
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
