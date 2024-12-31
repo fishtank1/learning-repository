@@ -7,10 +7,41 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .container {
   max-width: 600px;
   margin: 30px auto;
+}
+
+/* 
+is() select an element if it matches any of the selector inside the paranthesis.
+
+where() same as is() but has a lower specificity.
+
+has() select an element based on its children
+*/
+
+.container h1,
+.container h2,
+.container p {
+  color: red;
+}
+
+/* shorter way of above */
+.container :is(h1, h2, p) {
+  color: blue;
+}
+
+a:is(:hover, :focus) {
+  background-color: pink;
+}
+
+.container :where(h1, h2, p) {
+  color: green;
+}
+
+.container :has(h1 span) {
+  color: rebeccapurple;
 }

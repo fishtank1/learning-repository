@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
 }
 
@@ -22,4 +22,47 @@ p {
 input {
   width: 100%;
   padding: 5px;
+}
+
+p::first-letter {
+  font-size: 2rem;
+  color: rebeccapurple;
+  padding-right: 2px;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  color: red;
+  background: yellow;
+}
+
+input:required {
+  /* is a pseudo class but works more like an element */
+  border-color: red;
+}
+
+input[required] {
+  background-color: #f4f4f4;
+}
+
+input::placeholder {
+  color: purple;
+  font-weight: bold;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: dodgerblue;
+  background: white;
+  padding: 0.5rem;
+  border: thin solid gray;
+  border-radius: 3px;
+}
+
+li::marker {
+  content: "😶‍🌫️";
 }

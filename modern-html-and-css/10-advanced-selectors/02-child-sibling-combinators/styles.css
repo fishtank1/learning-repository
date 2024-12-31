@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 2;
 }
 
@@ -22,12 +22,33 @@ body {
 */
 
 /* Get only paragraphs that are direct children of container */
+.container > p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 /* Get only unordered lists that are direct children of container */
+.container > ul {
+  list-style: none;
+}
 
 /* Get only links that are direct children of container */
+.container > a {
+  color: red;
+}
 
 /* Get the immidiate sibling link after h1 */
+.container h1 ~ a {
+  color: green;
+  font-weight: bold;
+}
 
 /* Get all links that are siblings that come after h1 */
+.container h1 + a {
+  color: purple;
+}
 
+/* Get div which is next to an unordered list and that unordered list is a direct child of the container class */
+.container > ul ~ div {
+  background: blue;
+}
