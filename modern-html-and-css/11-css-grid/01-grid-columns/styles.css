@@ -1,3 +1,27 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #f4f4f4;
+}
+
+.item {
+  background: coral;
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.item-grid {
+  display: grid;
+  /* Number of values passed that many number of columns are created - all types of values are accepted mostly will see (fr) fractional value input.*/
+  justify-content: center;
+  grid-template-columns: 600px repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+  gap: 30px;
+  /* grid-row-gap, grid-column-gap, grid-gap are depricated in favor of row-gap, column-gap and gap. */
+}
