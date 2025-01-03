@@ -18,4 +18,6 @@ body {
 
 .item-grid {
   display: grid;
+  grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr[col-3-end col-4-start] 1fr; 
+  grid-template-rows: [row-1-start] 1fr [row-1-end row-2-start] 1fr [row-2-end row-3-start] 1fr;
 }
